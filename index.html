@@ -6,8 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="./main.js"></script>
+    <style>
+      .buono {
+        background-color: green;
+      }
+
+      .ottimo {
+        background-color: teal;
+      }
+
+      .insufficiente {
+        background-color: orange;
+      }
+
+      .gravementeInsufficiente {
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
-    <p>questa e un nuovo paragrafo</p>
+    <!-- 
+            voglio crare un pplicazione che eprmetta all utente di inserire
+             i suoi voti, verra visualizzata una lista con tutti i voti inseriti e la media dei suoi voti
+             altro:
+             1 visualizare se promosso o bocciato 
+             2 mettere colori diversi a seconda del punteggio,
+                se compreso tra 6 e 8 escluso = verde
+                se sopra 8 incluso = teal
+                quelli sotto il 6 ma sopra il 4 = arancione 
+                sotto il 4 = rosso
+      -->
+    <input id="voto" />
+    <button onclick="aggiungiVoto()">Aggiungi</button>
+    <p>media: <span id="media">non definita</span></p>
+    <p>Esito <span id="esito">placeholder</span></p>
+    <ul id="lista"></ul>
   </body>
 </html>
